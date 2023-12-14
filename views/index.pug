@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul 
+    each message in messages
+      li #{message.text} by #{message.user} on #{message.added}
+  ul 
+    li 
+      a(class='button' href='/new') New Message

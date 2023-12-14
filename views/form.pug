@@ -1,0 +1,11 @@
+body
+    h1 New Message
+    form(action='/new' method='POST')
+        | Author's name: 
+        input(name='messageUser' value='' type='text')
+        | Message: 
+        input(name='messageText' value='' type='text')
+        input(value='Submit' type='submit')
+    ul 
+        li 
+            a(class='button' href='/') Home
